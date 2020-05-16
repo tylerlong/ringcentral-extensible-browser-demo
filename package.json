@@ -6,7 +6,7 @@
     "dev": "webpack-dev-server --progress --colors"
   },
   "dependencies": {
-    "ringcentral-unified": "^0.4.0"
+    "ringcentral-unified": "^0.5.0"
   },
   "devDependencies": {
     "dotenv-override-true": "^6.2.0",

@@ -12,7 +12,7 @@ rc.login({
   password: process.env.RINGCENTRAL_PASSWORD
 })
 
-global.sendFax = e => {
+global.sendFax = async e => {
   e.preventDefault()
   console.log('send fax')
   const element = document.getElementById('image')
@@ -22,6 +22,13 @@ global.sendFax = e => {
     return
   }
   const file = element.files[0]
-  console.log(file)
-  console.log(rc.token)
+  const r = await rc.restapi().account().extension().fax().post({
+    to: [{ phoneNumber: process.env.RINGCENTRAL_RECEIVER }],
+    attachments: [{
+      filename: file.name,
+      contentType: `image/${file.name.endsWith('.png') ? 'png' : 'jpeg'}`,
+      content: file
+    }]
+  })
+  console.log(r)
 }

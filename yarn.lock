@@ -4084,10 +4084,10 @@ rimraf@^2.5.4, rimraf@^2.6.3:
   dependencies:
     glob "^7.1.3"
 
-ringcentral-unified@^0.4.0:
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/ringcentral-unified/-/ringcentral-unified-0.4.0.tgz#912259b9be85ed8ee4646b65404f35d08fc0b457"
-  integrity sha512-uCNu1sv98X96g/DtaiO0nq1V55cHmsk8CqijnxYEZtsUm9rtiPxCSnUHPUC5Y7tk7B2mUzs+5uE5QvPHos0aHw==
+ringcentral-unified@^0.4.5:
+  version "0.4.5"
+  resolved "https://registry.yarnpkg.com/ringcentral-unified/-/ringcentral-unified-0.4.5.tgz#d41cde22f1e566628ad84381d8d90b35b8adb11b"
+  integrity sha512-7O49Bvj2R8RE3suRy1gmWsuv0mgPLSxuE4ojpuZY/SZf9NuqOOPXtxIDLdJhGq9qgoyJ6M+YrccLso3MNIIpoQ==
   dependencies:
     axios "^0.19.2"
     delay "^4.3.0"
