@@ -1,4 +1,16 @@
-console.log('hello world')
+const RingCentral = require('ringcentral-unified').default
+
+const rc = new RingCentral({
+  server: process.env.RINGCENTRAL_SERVER_URL,
+  clientId: process.env.RINGCENTRAL_CLIENT_ID,
+  clientSecret: process.env.RINGCENTRAL_CLIENT_SECRET
+})
+
+rc.login({
+  username: process.env.RINGCENTRAL_USERNAME,
+  extension: process.env.RINGCENTRAL_EXTENSION,
+  password: process.env.RINGCENTRAL_PASSWORD
+})
 
 global.sendFax = e => {
   e.preventDefault()
@@ -11,4 +23,5 @@ global.sendFax = e => {
   }
   const file = element.files[0]
   console.log(file)
+  console.log(rc.token)
 }
