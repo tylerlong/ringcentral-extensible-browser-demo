@@ -3,6 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const { DefinePlugin } = require('webpack')
 
 const config = {
+  devtool: 'source-map',
   plugins: [
     new HtmlWebpackPlugin({ template: 'src/index.html' }),
     new DefinePlugin({
