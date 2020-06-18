@@ -22,6 +22,12 @@ global.sendFax = async e => {
     return
   }
   const file = element.files[0]
+
+  // const formData = new global.FormData()
+  // formData.append('files[]', new global.Blob([JSON.stringify({ to: [{ phoneNumber: process.env.RINGCENTRAL_RECEIVER }] })], { type: 'application/json' }), 'request.json')
+  // formData.append('files[]', file, file.name)
+  // const r = await rc.post('/restapi/v1.0/account/~/extension/~/fax', formData)
+
   const r = await rc.restapi().account().extension().fax().post({
     to: [{ phoneNumber: process.env.RINGCENTRAL_RECEIVER }],
     attachments: [{
