@@ -87,12 +87,12 @@
     "@nodelib/fs.scandir" "2.1.4"
     fastq "^1.6.0"
 
-"@rc-ex/core@^0.6.6":
-  version "0.6.6"
-  resolved "https://registry.yarnpkg.com/@rc-ex/core/-/core-0.6.6.tgz#b751e90fba3bbc07d024a83bae3ac13067dab6a6"
-  integrity sha512-AJDVyWAsCwANHdEO6EHRauUg9w6oOzZZiOT7sv+/uZqQODoBD7FKAJIJe0Jv07NYpuL30XzScCLsjrV1fNe4bg==
+"@rc-ex/core@^0.6.8":
+  version "0.6.8"
+  resolved "https://registry.yarnpkg.com/@rc-ex/core/-/core-0.6.8.tgz#58b9ec5b4eefe435850e308bc0240216eed7fe79"
+  integrity sha512-y6SCoE7meK2MA3Uo/Xbxk+rEG51eyFwMeHp9j+wg2/tCBbPG7ua6vi5fGuaMd5k6KSIJqh5h3B+ArU7hryCkLA==
   dependencies:
-    "@types/qs" "^6.9.5"
+    "@types/qs" "^6.9.6"
     axios "^0.21.1"
     form-data "^4.0.0"
     qs "^6.9.6"
@@ -173,7 +173,7 @@
   resolved "https://registry.yarnpkg.com/@types/normalize-package-data/-/normalize-package-data-2.4.0.tgz#e486d0d97396d79beedd0a6e33f4534ff6b4973e"
   integrity sha512-f5j5b/Gf71L+dbqxIpQ4Z2WlmI/mPJ0fOkGGmFgtb6sAu97EPczzbS3/tJKxmcYDj55OX6ssqwDAWOHIYDRDGA==
 
-"@types/qs@^6.9.5":
+"@types/qs@^6.9.6":
   version "6.9.6"
   resolved "https://registry.yarnpkg.com/@types/qs/-/qs-6.9.6.tgz#df9c3c8b31a247ec315e6996566be3171df4b3b1"
   integrity sha512-0/HnwIfW4ki2D8L8c9GVcG5I72s9jP5GSLVF0VIXDW00kmIpA6O33G7a8n59Tmh7Nz0WUC3rSb7PTY/sdW2JzA==
@@ -1579,6 +1579,11 @@ es-to-primitive@^1.2.1:
     is-callable "^1.1.4"
     is-date-object "^1.0.1"
     is-symbol "^1.0.2"
+
+es6-promise@^4.2.8:
+  version "4.2.8"
+  resolved "https://registry.yarnpkg.com/es6-promise/-/es6-promise-4.2.8.tgz#4eb21594c972bc40553d276e510539143db53e0a"
+  integrity sha512-HJDGx5daxeIvxdBxvG2cb9g4tEvwIk3i8+nhX0yGrYmZUzbkdg8QbDevheDB8gd0//uPj4c1EQua8Q+MViT0/w==
 
 escalade@^3.1.1:
   version "3.1.1"

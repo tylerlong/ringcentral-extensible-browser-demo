@@ -22,22 +22,20 @@ rc.login({
     return;
   }
   const file = files[0];
+  console.log('111');
 
-  const r = await rc
-    .restapi()
-    .account()
-    .extension()
-    .fax()
-    .post({
-      to: [{phoneNumber: process.env.RINGCENTRAL_RECEIVER}],
-      attachments: [
-        {
-          filename: file.name,
-          contentType: `image/${file.name.endsWith('.png') ? 'png' : 'jpeg'}`,
-          content: file,
-        },
-      ],
-    });
+  const r = await rc.restapi().account().extension().get();
+  // .fax()
+  // .post({
+  //   to: [{phoneNumber: process.env.RINGCENTRAL_RECEIVER}],
+  //   attachments: [
+  //     {
+  //       filename: file.name,
+  //       contentType: `image/${file.name.endsWith('.png') ? 'png' : 'jpeg'}`,
+  //       content: file,
+  //     },
+  //   ],
+  // });
   console.log(r);
   global.alert('Fax sent');
 };
