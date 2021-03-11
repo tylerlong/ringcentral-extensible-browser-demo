@@ -1,6 +1,6 @@
 {
-  "name": "ringcentral-unified-browser-demo",
-  "version": "0.1.0",
+  "name": "ringcentral-extensible-browser-demo",
+  "version": "0.2.0",
   "license": "MIT",
   "scripts": {
     "serve": "webpack serve --progress"

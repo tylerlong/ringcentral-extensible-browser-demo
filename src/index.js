@@ -37,4 +37,5 @@ global.sendFax = async e => {
     }]
   })
   console.log(r)
+  alert('Fax sent');
 }
