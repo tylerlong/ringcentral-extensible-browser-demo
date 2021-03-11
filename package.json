@@ -3,10 +3,10 @@
   "version": "0.1.0",
   "license": "MIT",
   "scripts": {
-    "start": "webpack-dev-server --progress --colors"
+    "serve": "webpack-dev-server --progress --colors"
   },
   "dependencies": {
-    "ringcentral-unified": "^0.7.4"
+    "@rc-ex/core": "^0.6.6"
   },
   "devDependencies": {
     "dotenv-override-true": "^6.2.0",

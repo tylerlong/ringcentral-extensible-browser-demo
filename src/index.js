@@ -1,4 +1,4 @@
-const RingCentral = require('ringcentral-unified').default
+const RingCentral = require('@rc-ex/core').default
 
 const rc = new RingCentral({
   server: process.env.RINGCENTRAL_SERVER_URL,
